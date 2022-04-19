@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastavni plan</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+
+    <script src="../jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+    <script src="../jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+    <script src="../jquery-ui-1.10.3.custom/jquery.ui.datepicker-hr.js"></script>
+    <script src="/js/NastavniPlan.js"></script>
+
+    <link
+        href="../jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.min.css"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nastavniPlan.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/img/Algebra-logo.png" alt="Algebra-logo">
+        </div>
+        <ul class="nav-links">
+  
+            <li><a href="index.html"><span><i class="fas fa-home"></i></span> Početna</a></li>
+            <li><a href="ONama.html"><span><i class="fas fa-comments"></i></i></span> O nama</a></li>
+            <li><a href="Novosti.html"><span><i class="fas fa-info-circle"></i></span> Novosti</a></li>
+            <li><a href="NastavniPlan.html"><span>  <i class="fas fa-info-circle"></i></span> Nastavni plan</a></li>
+            <li><a href="#"  data-toggle="modal" data-target="#contactModal"><span><i class="fas fa-envelope"></i></span> Kontakt</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Nastavni Plan</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 naziv_Kolegija">
+              <label for="naziv_Kolegija"><strong>Naziv kolegija:</strong></strong></label>
+              <input type="email" class="form-control" id="naziv_Kolegija" aria-describedby="emailHelp" placeholder="Započnite unos naziva kolegija..."> 
+            </div>
+            <div class="col-lg-6 tableFix">
+              <table class="table table-striped" id="tbKolegij">
+                <thead>
+                  <tr>
+                    <th scope="col">Kolegij</th>
+                    <th scope="col">ECTS</th>
+                    <th scope="col">Sati</th>
+                    <th scope="col">P</th>
+                    <th scope="col">V</th>
+                    <th scope="col"  colspan="2">Tip</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1>budi izvrstan u onom što voliš <br> <span>zaiskri</span></h1>
+    </footer> 
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"><i style="color: #6AEAFD;" class="fas fa-envelope"></i> Kontaktirajte nas</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="http://www.fulek.com/ALGEBRA/SUPIT/HTML5Forms1"  method="GET">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Puno ime:</label>
+                  <input type="text" name="name" class="form-control" id="exampleFormControlInput1" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">E-mail:</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput2" required>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Važost poruke:</label>
+                  <select class="form-control" name="importance" id="exampleFormControlSelect1">
+                    <option>Visoka</option>
+                    <option>Niska</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Vaša poruka:</label>
+                  <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <div class="form-check" style="padding: 0;">
+                    <label class="form-check-label" for="gridCheck1">
+                      primaj newsletter:
+                    </label>
+                    <input class="form-check-input" name="newsletter" type="checkbox" id="gridCheck1" style="margin: 5px 7.2px;">
+                </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-danger" data-dismiss="modal">Odustani</button>
+            </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>  
+    <script src="/js/global.js"></script>
+    <script src="https://kit.fontawesome.com/27beef507a.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

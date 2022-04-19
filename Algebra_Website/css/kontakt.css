@@ -1,0 +1,19 @@
+
+body {
+    padding-bottom: 0px;
+}
+  
+.video {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+main {
+    margin: 200px auto;
+    width: 800px;
+}

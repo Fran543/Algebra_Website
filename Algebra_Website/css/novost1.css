@@ -1,0 +1,51 @@
+.media  {
+    display : flex; 
+    justify-content: center;
+    min-height: 100px;
+    width: 100vw;
+}
+
+.slike {
+    display: flex;
+    justify-content: space-between;
+    width:625px;
+}
+
+
+.media a img {
+    height: 100px;
+    width: 300px;
+}
+
+.slika{
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 5px; 
+}
+
+.slika:hover img{
+    transform: scale(1.2);
+}
+
+.slika:hover{
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.77);
+}
+
+
+.videoDiv {
+
+    margin: 20px auto;
+    width: 625px;
+}
+video {
+    width: 625px;
+}
+
+main p {
+    font-size: 1.3em;
+    width: 80vw;
+    margin: 60px auto;
+
+} 
+

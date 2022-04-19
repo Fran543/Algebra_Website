@@ -1,0 +1,201 @@
+.nav_links2 {
+    margin-left: auto;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    animation: loadNav_links2 1s forwards;
+    animation-delay: 1s;
+    transform: translateX(100vh);
+}
+
+@keyframes loadNav_links2 {
+    0% {transform: translateX(100vh);}
+    40% {transform: translateX(0px);} 
+    60% {transform: translateX(40px);} 
+    75% {transform: translateX(-10px);} 
+    100% {transform: translateX(0px)}
+}
+
+.nav_links2 li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_links2 a {
+    color: #E1A617;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    word-spacing: 3px;
+}
+.nav_links2 a:hover {
+    color: white;
+}
+
+
+header > img {
+    transform: translateY(-40%);
+  }
+
+ h2 {
+    font-weight: bolder;
+    text-align: center;
+    color: #9B2433;
+    padding-top: 100px;
+    margin-bottom: 50PX;
+}
+.paragraphs {
+    background-color: #e7e7e7;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3em;
+}
+.paragraphs p {
+    color: #535353  ;
+    width: 55%;
+    margin: 0 auto;
+    padding: 90px 0px 45px;
+    animation: loadP 1s, forwards;
+}
+.paragraphs :nth-child(2)  {
+    padding: 45px 0px 90px;
+}
+
+@keyframes loadP {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto 0px;
+    width: 80vw;
+}
+.articles div {
+    width: 500px;
+    border: 1px solid lightgray;
+    border-radius: 1%;
+    padding: 20px;
+    margin: 3px;
+    
+}
+.articles div h3 {
+    padding: 0 0 15px;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 15px;
+
+}
+.articles div h3 span{
+    color: #4b71a3;
+}
+.articles div p {
+    font-weight: lighter;
+    font-size: 1em;
+    text-align: justify;
+    word-spacing: 3px;
+}
+
+.algebraGrupa .articles div {
+    width: 350px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.algebraGrupa .articles h3 {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.algebraGrupa .articles div img {
+    height: 60px;
+    display: block;
+    margin: 0px auto;
+}
+
+.kakoDoNas .articles {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255)),
+    url('/img/kakoDoNas.jpg');
+    background-attachment: fixed;
+    padding: 65px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.kakoDoNas .articles div {
+    background-color: white;
+    width: 550px;
+    margin-bottom: 15px;
+}
+.kakoDoNas .articles div h4 {   
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+.kakoDoNas .articles div h4 i{
+    color: #487AF7;
+}
+.kakoDoNas .articles div p {
+    padding: 30px 60px;
+    margin-bottom: 0;
+    word-spacing: normal;
+}
+.kakoDoNas .articles iframe {
+    width: 60vw;
+    height: 450px;
+}
+@media screen and (max-width:1440px) {
+    .nav_links2 {
+        flex-direction: column;
+        align-items:flex-end;
+        position: absolute;
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width:850px){
+    .nav_links2 {
+        display: none;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+      justify-content: space-around;
+    }
+    .logo img{
+        margin: 0;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #000000;
+        opacity: 90%;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        z-index: 1;
+    }
+}
+
+

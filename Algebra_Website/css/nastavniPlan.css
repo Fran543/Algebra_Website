@@ -1,0 +1,56 @@
+
+.container{
+    margin-top: 50px;
+    z-index: 2;
+}
+
+table {
+    visibility: hidden;
+    border-radius: 5px solid black;
+    border-collapse: collapse;
+     width: 100%; 
+}
+
+.tableFix          
+{ 
+    margin-top: 10px;
+    overflow-y:auto; 
+    height: 400px; 
+}
+.tableFix thead th  
+{ 
+    position: sticky; top: 0;
+    background:rgb(255, 255, 255); 
+    transform: translateY(-1px);
+}
+
+.tableFix tfoot td  
+{ 
+    position: sticky; bottom: 0; 
+    background:rgb(255, 255, 255); 
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.naziv_Kolegija {
+    animation: loadNaziv_Kolegija 1s forwards;
+}
+
+@keyframes loadNaziv_Kolegija {
+    from {
+        transform: translateX(200vh);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media screen and (max-height: 780px) {
+    footer {
+        position: relative;
+    }
+}
